@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM registry.cn-guangzhou.aliyuncs.com/kenward/ubuntu:22.04
 RUN apt update
 #安装必需工具
 RUN apt install wget clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
