@@ -1,5 +1,5 @@
 FROM registry.cn-guangzhou.aliyuncs.com/kenward/ubuntu:22.04
-COPY ./ubuntu-2204-source.list /etc/apt/source.list
+#COPY ./ubuntu-2204-source.list /etc/apt/source.list
 RUN apt update
 #安装必需工具
 RUN apt install wget clang cmake git ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev -y
