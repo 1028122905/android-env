@@ -15,7 +15,7 @@ RUN unzip commandlinetools-linux-6609375_latest.zip && mkdir /development/androi
 #添加git全局安全目录
 RUN git config --global --add safe.directory /development/flutter
 #安装jdk11
-RUN apt update && apt install openjdk-11-jdk -y
+RUN apt update && apt install openjdk-17-jdk -y
 #设置PATH环境变量
 ENV PATH="$PATH:/development/flutter/bin"
 ENV PATH="$PATH:/development/android-sdk/cmdline-tools/latest/bin"
