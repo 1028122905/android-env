@@ -21,4 +21,4 @@ RUN apt update && apt install openjdk-17-jdk -y
 ENV PATH="$PATH:/development/flutter/bin"
 ENV PATH="$PATH:/development/android-sdk/cmdline-tools/latest/bin"
 #安装android sdk; flutter配置adnroid sdk目录
-RUN yes | sdkmanager --licenses && sdkmanager "build-tools;29.0.3" "platforms;android-29"
+RUN yes | sdkmanager --licenses && sdkmanager "build-tools;30.0.3" "platforms;android-30"
